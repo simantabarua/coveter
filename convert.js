@@ -1,7 +1,5 @@
 
 
-
-
 function converterjs() {
     function converter(inputUnit, fromUnit, toUnit) {
         const conversionFactors = {
@@ -14,7 +12,6 @@ function converterjs() {
         console.log(inputUnit, fromUnit, toUnit);
         return convertedAmount = (inputUnit * exchangeRate).toFixed(2);
 
-
     }
     const inputUnit = parseInt(document.getElementById("inputUnit").value);
     const fromUnit = document.getElementById("fromUnit").value;
@@ -23,6 +20,4 @@ function converterjs() {
     const output = converter(inputUnit, fromUnit, toUnit);
     console.log(output);
     document.getElementById('output').innerText = output;
-
-
 }
